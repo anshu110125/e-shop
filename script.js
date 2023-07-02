@@ -6,6 +6,7 @@ const profileBtn = document.getElementById("profile");
 const myCartBtn = document.getElementById("my-cart");
 const nextBtn = document.getElementById("next-btn");
 const productBtn = document.getElementById("product");
+const helpBtn = document.getElementById("help");
 
 // extracting signup form's input fields
 const fName = document.getElementById("first-name");
@@ -42,10 +43,13 @@ profileBtn.addEventListener("click", () => {
   }
 });
 productBtn.addEventListener('click', ()=>{
-  location.href = "/products";
+  location.href = "/product";
 })
 myCartBtn.addEventListener("click", () => {
   location.href = "./cart";
+});
+helpBtn.addEventListener("click", () => {
+  location.href = "./help";
 });
 
 // mobile number validation
